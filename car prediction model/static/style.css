@@ -1,0 +1,74 @@
+/* BACKGROUND IMAGE */
+.bg {
+    background: url("/static/bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* GLASSMORPHISM CONTAINER */
+.container {
+    width: 380px;
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 15px;
+
+    /* Glass effect */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+
+    color: #fff;
+}
+
+/* FORM TEXT */
+label {
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+/* INPUT STYLE */
+input, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+    background: rgba(255,255,255,0.85);
+}
+
+/* BUTTON – NEON BLUE GRADIENT */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+
+    background: linear-gradient(90deg, #0078ff, #00c6ff);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #0059d4, #00a9dd);
+    transform: translateY(-2px);
+}
+
+/* TITLE */
+h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}

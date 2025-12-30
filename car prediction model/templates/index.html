@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Price Prediction</title>
+
+    <!-- Load CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="bg"></div>   <!-- Background Image Layer -->
+
+<div class="container">
+    <h2>Car Price Prediction</h2>
+
+    <div class="form-group">
+        <label>Year</label>
+        <input type="number" id="year">
+    </div>
+
+    <div class="form-group">
+        <label>Present Price (Lakhs)</label>
+        <input type="number" id="present_price">
+    </div>
+
+    <div class="form-group">
+        <label>Kms Driven</label>
+        <input type="number" id="kms_driven">
+    </div>
+
+    <div class="form-group">
+        <label>Fuel Type</label>
+        <select id="fuel_type">
+            <option value="0">Petrol</option>
+            <option value="1">Diesel</option>
+            <option value="2">CNG</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Seller Type</label>
+        <select id="seller_type">
+            <option value="0">Dealer</option>
+            <option value="1">Individual</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Transmission</label>
+        <select id="transmission">
+            <option value="0">Manual</option>
+            <option value="1">Automatic</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Owner Count</label>
+        <input type="number" id="owner">
+    </div>
+
+    <button onclick="predictPrice()">Predict Selling Price</button>
+
+    <h3 id="result"></h3>
+</div>
+
+<!-- Load JS -->
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
